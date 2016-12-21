@@ -1,0 +1,53 @@
+/* rgb(250, 255, 189) */
+
+body {
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+}
+
+#banner-container {
+   max-height: 100vh;
+}
+
+#banner-container h1 {
+    color: black;
+    font-size: 120px;
+    font-weight: 800;
+    letter-spacing: -8px;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#banner-container form {
+    position: relative;
+    text-align: center;
+}
+
+#banner-container form input {
+    background-color: #333;
+    color: #fff;
+    border: 0;
+    border-bottom: 2px solid #4a4a4a;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    outline: 0;
+    padding: 5px 20px;
+    text-align: center;
+    transition: all 0.3s;
+    border-radius: 3px;
+}
+
+#banner-container #banner {
+    background-color: #414A4C;
+    filter: blur(15px) grayscale(50%);
+    opacity: 0.3;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateZ(0px);
+}
