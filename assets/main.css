@@ -6,6 +6,7 @@ body {
 
 #banner-container {
    max-height: 100vh;
+   padding-bottom: 100px;
 }
 
 #banner-container h1 {
@@ -50,4 +51,8 @@ body {
     top: 0;
     width: 100%;
     transform: translateZ(0px);
+}
+
+#results {
+    overflow: scroll;
 }

@@ -8,7 +8,7 @@ $('#banner-container form').submit(function(e) {
     data: $(this).serialize(),
     success: function(res) {
       console.log('success!');
-      $(this).scrollTop($(this)[0].scrollHeight);
+      $('object').attr('data', "/assets/sample.pdf");
     },
     error: function() {
       console.log('error!');
