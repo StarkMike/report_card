@@ -8,7 +8,7 @@ $('#banner-container form').submit(function(e) {
     data: $(this).serialize(),
     success: function(res) {
       console.log('success!');
-      $('object').attr('data', "/assets/sample.pdf");
+      $('object').attr('data', "/assets/videographer.pdf");
     },
     error: function() {
       console.log('error!');
