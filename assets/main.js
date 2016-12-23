@@ -8,7 +8,7 @@ $('#banner-container form').submit(function(e) {
     data: $(this).serialize(),
     success: function(res) {
       console.log('success!');
-      $('object').attr('data', "/assets/videographer.pdf");
+      $('object').attr('data', "/assets/videograder.pdf");
       $('#results, #spinner').css('display', 'block');
       setTimeout(function() {
         $('#spinner').css('display', 'none');
