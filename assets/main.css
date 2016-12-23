@@ -5,28 +5,34 @@ body {
 }
 
 #banner-container {
-   max-height: 100vh;
-   padding-bottom: 100px;
+    height: 100vh;
 }
 
-#banner-container h1 {
-    color: black;
-    font-size: 120px;
-    font-weight: 800;
-    letter-spacing: -8px;
-    line-height: 100px;
+#text, #text > * {
+    position:relative;
+}
+
+#text {
+    top: 50px;
+}
+
+h1#title {
+    color: white;
+    font-size: 50px;
+    font-weight:800;
+    line-height: 70px;
     text-align: center;
     text-transform: uppercase;
 }
 
-#banner-container form {
+form {
     position: relative;
     text-align: center;
 }
 
-#banner-container form input {
-    background-color: #333;
-    color: #fff;
+form input {
+    background-color: white;
+    color: black;
     border: 0;
     border-bottom: 2px solid #4a4a4a;
     font-size: 36px;
@@ -39,10 +45,10 @@ body {
     border-radius: 3px;
 }
 
-#banner-container #banner {
-    background-color: #414A4C;
-    filter: blur(15px) grayscale(50%);
-    opacity: 0.3;
+#banner {
+    background-color: #75d277;
+    /*  filter: blur(15px) grayscale(50%); */
+    /* opacity: 0.3; */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,5 +60,17 @@ body {
 }
 
 #results {
-    overflow: scroll;
+    display: none;
+    padding-bottom:150%;
+}
+
+#spinner {
+    display:none;
+    margin:0 auto;
+    height:150px;
+    padding-top:40px;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-weight:100;
 }
