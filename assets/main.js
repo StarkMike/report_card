@@ -1,4 +1,4 @@
-$('#banner').backstretch("/assets/test.gif");
+//$('#banner').backstretch("/assets/test.gif");
 
 $('#banner-container form').submit(function(e) {
   e.preventDefault();
@@ -9,6 +9,13 @@ $('#banner-container form').submit(function(e) {
     success: function(res) {
       console.log('success!');
       $('object').attr('data', "/assets/videographer.pdf");
+      $('#results, #spinner').css('display', 'block');
+      setTimeout(function() {
+        $('#spinner').css('display', 'none');
+        $('html, body').stop(true, true).animate({
+          scrollTop: $("#results").offset().top + $("#results").height()
+        }, 500);
+      }, 4000);
     },
     error: function() {
       console.log('error!');

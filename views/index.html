@@ -2,18 +2,25 @@
 <html>
   <head>
     <title>Your Video Report Card</title>
+    <link type="text/css" rel="stylesheet" href="/assets/bootstrap-3.3.7.min.css">
     <link type="text/css" rel="stylesheet" href="/assets/main.css">
   </head>
   <body>
     <div id="banner-container">
       <div id="banner"></div>
-      <h1>Video Gradeyard</h1>
-      <form>
-        <input type="text" name="url" placeholder="Website">
-      </form>
+      <div id="text">
+        <img style="position:relative;display:block;margin:0 auto;padding-left:5px" src="/assets/logo.png">
+
+        <h1 id="title">How Strong<br> Is Your Video Strategy?</h1>
+        <form>
+          <input type="text" name="url" placeholder="http://your-website.com">
+        </form>
+        <h1 style="text-align:center;color:white;">The results may surprise you!</h1>
+        <img id="spinner" src="/assets/stole.gif">
+      </div>
     </div>
-    <div id="results">
-      <object type="application/pdf" width="100%" height="12000px" id="results" data="">
+    <div id="results" class="embed-responsive">
+      <object type="application/pdf" data="/assets/sample.pdf">
       </object>
     </div>
     <script type="text/javascript" src="/assets/jquery-3.1.1.min.js"></script>
